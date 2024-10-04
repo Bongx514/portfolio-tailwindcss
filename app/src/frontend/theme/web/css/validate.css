@@ -1,0 +1,10 @@
+span.validate {
+    color: red;
+}
+.validate.name, .validate.email, .validate.message {
+    display: none;
+    transition: .5s ease;
+}
+.show {
+    display: block;
+}

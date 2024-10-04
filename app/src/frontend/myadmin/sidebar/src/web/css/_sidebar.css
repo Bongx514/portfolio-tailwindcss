@@ -1,0 +1,96 @@
+/* sidebar button toggle styles */
+.sidebarBtn {
+    position: fixed;
+    top: 5px;
+    left: 0;
+    z-index: 3;
+    width: auto;
+    height: auto;
+    transition: left .3s ease;
+}
+ 
+.sidebarBtn button{
+    background: transparent;
+    position: fixed;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    width: 50px;
+    height: 30px;
+    margin: 0 0 0 20px ;
+}
+.fa-solid.fa-xmark{
+    display: none;
+}
+
+/* sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 320px;
+    height: 100vh;
+    z-index: 2;
+    padding: 25px 15px;
+    background-color: #ececec;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+}
+
+.sidebar-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    border-bottom: solid #212121;
+}
+
+.sidebar-body {
+    border: none;
+}
+.sidebar-links{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-links li {
+    position: relative;
+    margin-bottom: 10px;
+}
+.sidebar-links li a{
+    display: block;
+    color: #212121;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+.sidebar-links li a:hover {
+    background-color: #212121;
+    color: #fff;
+    padding: 5px 10px;
+    transition: .2s ease-in-out;
+}
+
+.sidebar-footer {
+    position: relative;
+    top: 520px;
+}
+.sidebar-logout {
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+}
+
+/* Your CSS for mobile devices */
+@media only screen and (max-width: 480px) {
+    .sidebarBtn{
+        top: 0;
+        left: 0;
+    }
+    .sidebar-footer{
+        top: 300px;
+    }
+}
